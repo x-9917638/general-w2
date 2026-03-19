@@ -206,6 +206,7 @@ function loadProgress() {
   }
   let new_state = JSON.parse(state_strimg);
   if (!isState(new_state)) {
+    localStorage.removeItem("state");
     alert("Invalid save data found");
     return;
   }
