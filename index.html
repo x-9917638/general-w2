@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Copyright (C) 2026 Valerie <valerie@ouppy.gay> -->
+<!-- This program is free software: you can redistribute it and/or modify -->
+<!-- it under the terms of the GNU Affero General Public License as published by -->
+<!-- the Free Software Foundation, under version 3 of the License only. -->
+
+<!-- This program is distributed in the hope that it will be useful, -->
+<!-- but WITHOUT ANY WARRANTY; without even the implied warranty of -->
+<!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the -->
+<!-- GNU Affero General Public License for more details. -->
+
+<!-- You should have received a copy of the GNU Affero General Public License -->
+<!-- along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Clicker Game</title>
+        <link rel="stylesheet" href="static/styles.css" />
+    </head>
+    <body>
+        <main>
+            <aside id="stats-panel">
+                <div id="stat-items">
+                    <h2>Stats</h2>
+                </div>
+            </aside>
+            <section id="game-area">
+                <p>Money: $<span id="money-count">0.00</span></p>
+
+                <button id="clicker">Click me</button>
+                <br />
+                <button id="save" onclick="saveProgress()">
+                    Save Progress
+                </button>
+                <br />
+                <button id="clear" onclick="clearProgress()">
+                    Reset Progress
+                </button>
+            </section>
+            <aside id="shop-panel">
+                <div id="shop-items">
+                    <h2>Shop</h2>
+                </div>
+            </aside>
+        </main>
+
+        <script src="static/main.js"></script>
+    </body>
+</html>
